@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>bài tập ngày tháng năm</h1> 
+</body>
+<script>
+   function sohople (number){
+    return number < 10 ? "0" + number : number;
+   }
+var year = parseInt(prompt("Nhập năm:"));
+var month = parseInt(prompt("Nhập tháng:"));
+var day = parseInt(prompt("Nhập ngày:"));
+if (year >= 1000 && year <= 9999 && month >= 1 && month <= 12 && day >= 1 && day <= 31) {
+var final = sohople(day) + "-" + sohople(month) + "-" + year;
+alert ("kết quả: " + final)
+}
+else {
+    alert("Ngày Tháng Năm không hợp lệ");
+}
+
+</script>
+</html>
