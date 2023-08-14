@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>bài tập tính lãi suất ngân hàng</h1>
+</body>
+<script>
+    var tiengoc = parseInt (prompt("Nhập số tiền gửi = (triệu)"));
+    var laisuat = parseInt (prompt("Nhập vào lãi suất = (%)"));
+    var nam = parseInt (prompt("Nhập vào số năm gửi = "));
+
+    var tienloi = tiengoc * laisuat * 1/100 * nam ;
+    var lainhanduoc = tiengoc + tienloi  
+
+    alert ("số tiền nhận được = " + lainhanduoc)
+</script>
+</html>
